@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F31EE5201DF7088600B2E60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE51F1DF7088600B2E60C /* AppDelegate.swift */; };
-		F31EE5221DF7088600B2E60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE5211DF7088600B2E60C /* ViewController.swift */; };
+		F31EE5221DF7088600B2E60C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE5211DF7088600B2E60C /* TableViewController.swift */; };
 		F31EE5251DF7088600B2E60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31EE5231DF7088600B2E60C /* Main.storyboard */; };
 		F31EE5271DF7088600B2E60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31EE5261DF7088600B2E60C /* Assets.xcassets */; };
 		F31EE52A1DF7088600B2E60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31EE5281DF7088600B2E60C /* LaunchScreen.storyboard */; };
 		F31EE5351DF7088600B2E60C /* TableViewTransitionSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE5341DF7088600B2E60C /* TableViewTransitionSampleTests.swift */; };
 		F31EE5401DF7088600B2E60C /* TableViewTransitionSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE53F1DF7088600B2E60C /* TableViewTransitionSampleUITests.swift */; };
+		F31EE54E1DF708B600B2E60C /* SecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31EE54D1DF708B600B2E60C /* SecondViewController.storyboard */; };
+		F31EE5501DF708CF00B2E60C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31EE54F1DF708CF00B2E60C /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F31EE51C1DF7088600B2E60C /* TableViewTransitionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTransitionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31EE51F1DF7088600B2E60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F31EE5211DF7088600B2E60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F31EE5211DF7088600B2E60C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F31EE5241DF7088600B2E60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F31EE5261DF7088600B2E60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F31EE5291DF7088600B2E60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		F31EE53B1DF7088600B2E60C /* TableViewTransitionSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTransitionSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31EE53F1DF7088600B2E60C /* TableViewTransitionSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTransitionSampleUITests.swift; sourceTree = "<group>"; };
 		F31EE5411DF7088600B2E60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31EE54D1DF708B600B2E60C /* SecondViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondViewController.storyboard; sourceTree = "<group>"; };
+		F31EE54F1DF708CF00B2E60C /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				F31EE51F1DF7088600B2E60C /* AppDelegate.swift */,
-				F31EE5211DF7088600B2E60C /* ViewController.swift */,
+				F31EE5211DF7088600B2E60C /* TableViewController.swift */,
 				F31EE5231DF7088600B2E60C /* Main.storyboard */,
 				F31EE5261DF7088600B2E60C /* Assets.xcassets */,
 				F31EE5281DF7088600B2E60C /* LaunchScreen.storyboard */,
 				F31EE52B1DF7088600B2E60C /* Info.plist */,
+				F31EE54D1DF708B600B2E60C /* SecondViewController.storyboard */,
+				F31EE54F1DF708CF00B2E60C /* SecondViewController.swift */,
 			);
 			path = TableViewTransitionSample;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31EE54E1DF708B600B2E60C /* SecondViewController.storyboard in Resources */,
 				F31EE52A1DF7088600B2E60C /* LaunchScreen.storyboard in Resources */,
 				F31EE5271DF7088600B2E60C /* Assets.xcassets in Resources */,
 				F31EE5251DF7088600B2E60C /* Main.storyboard in Resources */,
@@ -262,7 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F31EE5221DF7088600B2E60C /* ViewController.swift in Sources */,
+				F31EE5501DF708CF00B2E60C /* SecondViewController.swift in Sources */,
+				F31EE5221DF7088600B2E60C /* TableViewController.swift in Sources */,
 				F31EE5201DF7088600B2E60C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

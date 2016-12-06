@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O8v-lo-bPr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="MQj-3c-Xhq">
+            <objects>
+                <viewController restorationIdentifier="secondViewController" id="O8v-lo-bPr" customClass="SecondViewController" customModule="TableViewTransitionSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n4X-23-cDn"/>
+                        <viewControllerLayoutGuide type="bottom" id="HxL-kZ-XSh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hG2-44-WeS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lco-Xf-bcT">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lco-Xf-bcT" firstAttribute="width" secondItem="hG2-44-WeS" secondAttribute="width" id="EDD-Oc-jzi"/>
+                            <constraint firstItem="lco-Xf-bcT" firstAttribute="height" secondItem="hG2-44-WeS" secondAttribute="height" id="HOP-Y2-ysl"/>
+                            <constraint firstItem="lco-Xf-bcT" firstAttribute="centerX" secondItem="hG2-44-WeS" secondAttribute="centerX" id="UTd-9E-xWI"/>
+                            <constraint firstItem="lco-Xf-bcT" firstAttribute="centerY" secondItem="hG2-44-WeS" secondAttribute="centerY" id="j4u-4n-5OK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="lco-Xf-bcT" id="sU5-aY-2hD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXl-Oq-geZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="159"/>
+        </scene>
+    </scenes>
+</document>
